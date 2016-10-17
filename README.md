@@ -3,8 +3,9 @@ oe-rpb-manifest
 
 OE RPB Repo manifest repository with Advantech layer
 
-This repository is based on [96boards/oe-rpb-manifest](https://github.com/96boards/oe-rpb-manifest), and add Advantech add-on features.
-For details about original oe-rpb-manifest, you can check the [README](https://github.com/96boards/oe-rpb-manifest/blob/krogoth/README.md) file.
+This repository is based on 96boards/oe-rpb-manifest, and add Advantech add-on features.
+For details about original oe-rpb-manifest, you can check the README below.
+https://github.com/96boards/oe-rpb-manifest/blob/master/README.md
 
 Repo init
 ---------
