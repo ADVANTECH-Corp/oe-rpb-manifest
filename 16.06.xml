@@ -21,5 +21,5 @@
   <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="8e57986f9ea50afc9c834aa208422e9a124a5c4d" upstream="jethro"/>
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="8ab04afbffb4bc5184cfe0655049de6f44269990" upstream="jethro"/>
   <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="1f4bfa33073584c25396d74f3929f263f3df188b" upstream="jethro"/>
-  <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github" revision="29ea3139267a1b9976ed2926a95ee990824bd892" upstream="master"/>
+  <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github" revision="master"/>
 </manifest>
