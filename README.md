@@ -14,8 +14,8 @@ To get the latest version of each meta-layers, you can use default.xml.
 $ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git
 ```
 
-To get the release version, you can use a specific xml, e.g. 16.06.xml.
+To get the release version, you can use a specific xml, e.g. 16.09.xml.
 ```
-$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b jethro -m 16.06.xml
+$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 16.09.xml
 ```
 
