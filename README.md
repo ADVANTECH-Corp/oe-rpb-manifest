@@ -19,3 +19,11 @@ To get the release version, you can use a specific xml, e.g. 16.09.xml.
 $ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 16.09.xml
 ```
 
+Release Note
+------------
+
+96Boards Official Release:
+
+* [16.06](http://www.96boards.org/blog/reference-software-platform-16-06-release/)
+* [16.09](http://www.96boards.org/forums/topic/debian-based-linaro-16-09-release/)
+
