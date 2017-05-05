@@ -4,7 +4,7 @@ oe-rpb-manifest
 OE RPB Repo manifest repository with Advantech layer
 
 This repository is based on [96boards/oe-rpb-manifest](https://github.com/96boards/oe-rpb-manifest), and add Advantech add-on features.
-For details about original oe-rpb-manifest, you can check the [README](https://github.com/96boards/oe-rpb-manifest/blob/krogoth/README.md) file.
+For details about original oe-rpb-manifest, you can check the [README](https://github.com/96boards/oe-rpb-manifest/blob/morty/README.md) file.
 
 BSP Source
 ----------
@@ -17,12 +17,12 @@ $ cd <BSP folder>
 
 To get the latest version of each meta-layers, you can use default.xml.
 ```
-$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth
+$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty
 ```
 
 To get an official release version, you can assign a specific xml, e.g. 410cLBV1040.xml.
 ```
-$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 410cLBV1040.xml
+$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 410cLBV1040.xml
 ```
 
 Finally, pull down the BSP by running
