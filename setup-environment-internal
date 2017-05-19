@@ -59,6 +59,43 @@ if [ $# -gt 1 ]; then
     usage
     return 1
 fi
+
+end_prompt () {
+    cat <<EOF
+
+Welcome to OpenEmbedded Reference Platform Build (OE RPB)
+
+For more information about OpenEmbedded see their website:
+    http://www.openembedded.org/
+
+Your build environemnt has been configured with:
+
+    MACHINE = ${MACHINE}
+    SDKMACHINE = ${SDKMACHINE}
+    DISTRO = ${DISTRO}
+
+You can now run 'bitbake <target>'
+
+Some of common targets are:
+    rpb-console-image
+    rpb-desktop-image
+    rpb-weston-image
+    core-image-base
+    core-image-minimal
+
+EOF
+}
+
+# [Advantech] Check existed MACHINE & DISTRO
+if [ $# -eq 1 ]; then
+    BUILDDIR=$OEROOT/$1
+
+    if [ -e ${BUILDDIR} ]; then
+        MACHINE=$(egrep "^MACHINE" "${BUILDDIR}/conf/auto.conf" | sed -e 's%^MACHINE ?= %%' | sed -e 's/^"//'  -e 's/"$//')
+        DISTRO=$(egrep "^DISTRO" "${BUILDDIR}/conf/auto.conf" | sed -e 's%^DISTRO ?= %%' | sed -e 's/^"//'  -e 's/"$//')
+    fi
+fi
+
 # create a common list of "<machine>(<layer>)", sorted by <machine>
 # Blacklist OE-core and meta-linaro, we only want 96boards + vendor layers
 MACHLAYERS=$(find layers -print | grep "conf/machine/.*\.conf" | grep -v scripts | grep -v openembedded-core | grep -v meta-linaro | sed -e 's/\.conf//g' -e 's/layers\///' | awk -F'/conf/machine/' '{print $NF "(" $1 ")"}' | LANG=C sort)
@@ -227,6 +264,7 @@ then
     sha512sum --quiet -c conf/checksum > /dev/null 2>&1
     if [ $? -eq 0 ]
     then
+       end_prompt
        return
     fi
 fi
@@ -342,26 +380,4 @@ EOF
     fi
 fi
 
-cat <<EOF
-
-Welcome to OpenEmbedded Reference Platform Build (OE RPB)
-
-For more information about OpenEmbedded see their website:
-    http://www.openembedded.org/
-
-Your build environemnt has been configured with:
-
-    MACHINE = ${MACHINE}
-    SDKMACHINE = ${SDKMACHINE}
-    DISTRO = ${DISTRO}
-
-You can now run 'bitbake <target>'
-
-Some of common targets are:
-    rpb-console-image
-    rpb-desktop-image
-    rpb-weston-image
-    core-image-base
-    core-image-minimal
-
-EOF
+end_prompt

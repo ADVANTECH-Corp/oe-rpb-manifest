@@ -27,6 +27,6 @@
   <project remote="yocto" name="git/meta-ti" path="layers/meta-ti">
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-
+  <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
 
 </manifest>
