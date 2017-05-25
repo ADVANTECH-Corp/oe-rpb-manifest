@@ -27,7 +27,7 @@
   <project remote="yocto" name="git/meta-ti" path="layers/meta-ti" revision="41d6fdc0fe5ea6054616cfccda13baac3ff33791">
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" revision="krogoth"/>
+  <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
   <project remote="github" name="ADVANTECH-Corp/db-boot-tools" path="bootloader" revision="44cc8ea6581e46d1c4117567c993763f8d0ccabd" upstream="16.09-adv"/>
 
 </manifest>
