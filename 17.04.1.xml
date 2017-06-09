@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default revision="morty" sync-j="4"/>
+
+  <remote fetch="http://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="https://bitbucket.org" name="bitbucket"/>
+  <remote fetch="http://git.linaro.org" name="linaro"/>
+  <remote fetch="http://git.shr-project.org" name="shr"/>
+
+  <project remote="linaro" name="openembedded/meta-linaro" path="layers/meta-linaro" revision="e5b6b4e20a489bd7f39a9053f84914e318aea199"/>
+  <project remote="linaro" name="openembedded/meta-backports" path="layers/meta-backports" revision="4484246e00c38cda7c69a5e4a43352b1675466b5"/>
+
+  <project remote="github" name="openembedded/openembedded-core" path="layers/openembedded-core" revision="cbb5961d3db27f81967345a73267920f2623ccac"/>
+  <project remote="github" name="openembedded/meta-openembedded" path="layers/meta-openembedded" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e"/>
+  <project remote="github" name="openembedded/bitbake" path="bitbake" revision="bdf7a362ecdafd47f309b7a21feac4b94624f287" upstream="1.32"/>
+  <project remote="github" name="OSSystems/meta-browser" path="layers/meta-browser" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0" />
+  <project remote="github" name="meta-qt5/meta-qt5" path="layers/meta-qt5" revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1"/>
+  <project remote="github" name="96boards/meta-96boards" path="layers/meta-96boards" revision="db2296d083c415861d40d684d1cccf05a11ae024"/>
+  <project remote="github" name="96boards/meta-rpb" path="layers/meta-rpb" revision="c32489d05971c27ea3b9c0872f0d6b1b37f3ee2c"/>
+  <project remote="github" name="ndechesne/meta-qcom" path="layers/meta-qcom" revision="161269ba1605222ffc5026e219da57af2d712d51"/>
+  <project remote="github" name="cpriouzeau/meta-st-cannes2" path="layers/meta-st-cannes2" revision="8ddc346d5b511291d5de1156eb933d2784a1f8ae"/>
+
+  <project remote="yocto" name="git/meta-virtualization" path="layers/meta-virtualization" revision="1beb18840539f0366b6a5f20bcff98c99534c496"/>
+  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti" revision="1848849c0822f1d3261b69cdfda54c32369585d7">
+      <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
+  <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
+  <project remote="github" name="ADVANTECH-Corp/db-boot-tools" path="bootloader" revision="44cc8ea6581e46d1c4117567c993763f8d0ccabd" upstream="16.09-adv"/>
+
+</manifest>
