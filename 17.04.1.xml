@@ -28,6 +28,6 @@
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
-  <project remote="github" name="ADVANTECH-Corp/db-boot-tools" path="bootloader" revision="44cc8ea6581e46d1c4117567c993763f8d0ccabd" upstream="16.09-adv"/>
+  <project remote="github" name="ADVANTECH-Corp/db-boot-tools" path="bootloader" revision="17.04-adv"/>
 
 </manifest>

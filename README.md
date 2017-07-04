@@ -11,23 +11,23 @@ BSP Source
 
 Create your own BSP folder first.
 ```
-$ mkdir <BSP folder>
-$ cd <BSP folder>
+mkdir <BSP folder>
+cd <BSP folder>
 ```
 
-To get the latest version of each meta-layers, you can use default.xml.
+To get the latest version of Advantech meta layers, you can use BSP specific XML.
 ```
-$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 17.06.xml
 ```
 
-To get an official release version, you can assign a specific xml, e.g. 410cLBV1040.xml.
+To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1060.xml.
 ```
-$ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 410cLBV1040.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 410cLBV1060.xml
 ```
 
 Finally, pull down the BSP by running
 ```
-$ repo sync
+repo sync
 ```
 
 Setup Environment
@@ -44,7 +44,7 @@ DISTRO values can be:
 - rpb-wayland
 
 ```
-$ source setup-environment <Your build folder>
+source setup-environment <Your build folder>
 ```
 
 By default, we adopt **rpb** DISTRO.
@@ -62,12 +62,12 @@ Images
 
 To build the image, run
 ```
-$ bitbake rpb-desktop-image
+bitbake rpb-desktop-image
 ```
 
 To build kernel only, run
 ```
-$ bitbake linux-linaro-qcomlt
+bitbake linux-linaro-qcomlt
 ```
 
 Deploy
@@ -77,7 +77,7 @@ Deploy
 
 By default, we use `fastboot` utility to flash images into on-board eMMC. On Ubuntu, you can get the package by this way.
 ```
-$ sudo apt-get install android-tools-fastboot
+sudo apt-get install android-tools-fastboot
 ```
 
 To download the images, the target device must be booted into `fastboot mode`.
@@ -101,7 +101,7 @@ There are 2 ways to do this.
 Once you enter fastboot mode, you can plug a USB cable from host to target device.
 To verify the fastboot connection, you can run:
 ```
-$ sudo fastboot devices
+sudo fastboot devices
 ```
 
 ### Bootloader
@@ -121,12 +121,12 @@ If your IMAGE is `rpb-desktop-image` and MACHINE is `rsb-4760`, the images will 
 
 You can use fastboot to flash them as well.
 ```
-$ fastboot flash boot boot-MACHINE.img
+fastboot flash boot boot-MACHINE.img
 ```
 
 Because fastboot supports sparse image, you have to transform the rootfs image before flashing.
 ```
-$ gunzip IMAGE-MACHINE.ext4.gz
-$ ext2simg -v IMAGE-MACHINE.ext4 IMAGE-MACHINE.img
-$ fastboot flash rootfs IMAGE-MACHINE.img
+gunzip IMAGE-MACHINE.ext4.gz
+ext2simg -v IMAGE-MACHINE.ext4 IMAGE-MACHINE.img
+fastboot flash rootfs IMAGE-MACHINE.img
 ```
