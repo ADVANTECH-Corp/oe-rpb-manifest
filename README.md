@@ -106,7 +106,7 @@ sudo fastboot devices
 
 ### Bootloader
 
-Besides, you also need the Linux bootloader package from [here](http://builds.96boards.org/releases/dragonboard410c/linaro/rescue/latest/) to your development host, it will be named something like `dragonboard410c_bootloader_emmc_linux-<version>.zip`.
+Besides, you also need the Linux bootloader package from `<BSP folder>/bootloader` folder to your development host, it will be named something like `advantech_bootloader_emmc_linux-<version>.zip`.
 
 Unzip the file and run the `flashall` script to update bootloader.
 
