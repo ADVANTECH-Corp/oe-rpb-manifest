@@ -19,13 +19,10 @@
   <project remote="github" name="OSSystems/meta-browser" path="layers/meta-browser" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0" />
   <project remote="github" name="meta-qt5/meta-qt5" path="layers/meta-qt5" revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1"/>
   <project remote="github" name="96boards/meta-96boards" path="layers/meta-96boards" revision="b521ae9794df97832cbe2ebb52d20376b76ab36e"/>
-  <project remote="github" name="96boards/meta-rpb" path="layers/meta-rpb" revision="9c605c84a80faa261a48057b9aafbd1efd2a3949"/>
+  <project remote="github" name="96boards/meta-rpb" path="layers/meta-rpb" revision="9caa73c9532af290ecb9c9302efff41cefcf5146"/>
   <project remote="github" name="ndechesne/meta-qcom" path="layers/meta-qcom" revision="26380970fbe5e8a04efe8c1098ad45acae0d87e4"/>
-  <project remote="github" name="cpriouzeau/meta-st-cannes2" path="layers/meta-st-cannes2" revision="8ddc346d5b511291d5de1156eb933d2784a1f8ae"/>
 
-  <project remote="yocto" name="git/meta-intel" path="layers/meta-intel" revision="6add41510412ca196efb3e4f949d403a8b6f35d7"/>
-  <project remote="yocto" name="git/meta-virtualization" path="layers/meta-virtualization" revision="1beb18840539f0366b6a5f20bcff98c99534c496"/>
-  <project remote="yocto" name="git/meta-ti" path="layers/meta-ti" revision="467fc31d383c0871a2525c0eb0c07d930ac32a86">
+  <project remote="yocto" name="git/meta-virtualization" path="layers/meta-virtualization" revision="1beb18840539f0366b6a5f20bcff98c99534c496">
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
