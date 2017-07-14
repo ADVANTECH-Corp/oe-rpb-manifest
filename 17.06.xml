@@ -9,6 +9,7 @@
   <remote fetch="https://bitbucket.org" name="bitbucket"/>
   <remote fetch="http://git.linaro.org" name="linaro"/>
   <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="git://codeaurora.org" name="codeaurora"/>
 
   <project remote="linaro" name="openembedded/meta-linaro" path="layers/meta-linaro" revision="49b0f32d7e955f250b0022d1b2f403f45a2c2d9c"/>
   <project remote="linaro" name="openembedded/meta-backports" path="layers/meta-backports" revision="9b44983081f243ed52e74bc5a15af3cc50c9f4be"/>
@@ -26,6 +27,8 @@
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
-  <project remote="github" name="ADVANTECH-Corp/db-boot-tools" path="bootloader" revision="17.04-adv"/>
+  <project remote="github" name="ADVANTECH-Corp/lk" path="bootloader/lk" revision="release/LA.BR.1.2.7-03810-8x16.0"/>
+  <project remote="codeaurora" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="bootloader/toolchain" revision="LA.BR.1.1.3.c4"/>
+  <project remote="linaro" name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" revision="master"/>
 
 </manifest>

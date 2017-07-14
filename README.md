@@ -20,9 +20,9 @@ To get the latest version of Advantech meta layers, you can use BSP specific XML
 repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 17.06.xml
 ```
 
-To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1060.xml.
+To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1100.xml.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 410cLBV1060.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 410cLBV1100.xml
 ```
 
 Finally, pull down the BSP by running
@@ -70,6 +70,16 @@ To build kernel only, run
 bitbake linux-linaro-qcomlt
 ```
 
+To build & sign LK bootloader, run
+```
+cd <BSP folder>
+cd bootloader/lk
+make -j4 msm8916 EMMC_BOOT=1 TOOLCHAIN_PREFIX=../toolchain/bin/arm-eabi-
+
+mv ./build-msm8916/emmc_appsboot.mbn ./build-msm8916/emmc_appsboot_unsigned.mbn
+../signlk/signlk.sh -i=./build-msm8916/emmc_appsboot_unsigned.mbn -o=./build-msm8916/emmc_appsboot.mbn -d
+```
+
 Deploy
 ------
 
@@ -86,7 +96,7 @@ There are 2 ways to do this.
 
 1. Boot from rescue sdcard
 
- - Download the rescue image from [here](http://builds.96boards.org/releases/dragonboard410c/linaro/rescue/latest/). It will be named like `dragonboard410c_sdcard_rescue-<version>.zip`.
+ - Download the rescue image from [here](https://github.com/ADVANTECH-Corp/db-boot-tools/raw/17.04-adv/advantech_sdcard_rescue-79.zip). It will be named like `advantech_sdcard_rescue-<version>.zip`.
 
  - Flash the rescue image into a sdcard. Then, insert the sdcard and boot from it. You will enter the fastboot mode by default.
 
@@ -106,7 +116,7 @@ sudo fastboot devices
 
 ### Bootloader
 
-Besides, you also need the Linux bootloader package from `<BSP folder>/bootloader` folder to your development host, it will be named something like `advantech_bootloader_emmc_linux-<version>.zip`.
+Besides, you also need the bootloader packages from [here](https://github.com/ADVANTECH-Corp/db-boot-tools/raw/17.04-adv/advantech_bootloader_emmc_linux-79.zip), it will be named something like `advantech_bootloader_emmc_linux-<version>.zip`.
 
 Unzip the file and run the `flashall` script to update bootloader.
 
