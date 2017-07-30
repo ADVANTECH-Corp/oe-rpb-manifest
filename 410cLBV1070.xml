@@ -24,7 +24,7 @@
   <project remote="github" name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" revision="695b1bac8f3c329754fc6709332f25c877af0efb" revision="krogoth-adv">
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
-  <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" revision="3a7b4fe5ba9f1611f543ec4b65e2af5fe50b0569"/>
+  <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" revision="70662af6de7579487d199fb3b41f2465783050fa"/>
   <project remote="github" name="ADVANTECH-Corp/lk" path="bootloader/lk" revision="cd13e9c6ff3b65a5e748652423429c2d225140c3" revision="release/LA.BR.1.2.7-03810-8x16.0"/>
   <project remote="codeaurora" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="bootloader/toolchain" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a"/>
   <project remote="linaro" name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" revision="059f3f2768a8bc460fe814e2bb4bc8cc3078c8ba"/>
