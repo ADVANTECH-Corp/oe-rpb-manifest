@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://bitbucket.org" name="bitbucket"/>
+  <remote fetch="git://codeaurora.org" name="codeaurora"/>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="http://git.linaro.org" name="linaro"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="http://git.yoctoproject.org" name="yocto"/>
+  
+  <default revision="morty" sync-j="4"/>
+  
+  <project name="96boards/meta-96boards" path="layers/meta-96boards" remote="github" revision="2ceb1c3b2777630c5f53a2ffca3d1411d3347d3c"/>
+  <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github" revision="aefeb87d70d02677909a92ed0712ad8e647dadea"/>
+  <project name="ADVANTECH-Corp/lk" path="bootloader/lk" remote="github" revision="release/LA.BR.1.2.7-03810-8x16.0"/>
+  <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github"/>
+  <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0"/>
+  <project name="git/meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="877379ff111931ea71f8ee47452934a6d649d790">
+    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
+  <project name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" remote="linaro" revision="master"/>
+  <project name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github" revision="2c9f0e4eb0e9097f6f872ec1e1d81768a8ab5f1b"/>
+  <project name="ndechesne/meta-qcom" path="layers/meta-qcom" remote="github" revision="dc22ef13114879ef0d4adb832ca4b61a97fed1a8"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="7c9370f7fafc98e4c836255e72ff8acff1138997" upstream="1.32"/>
+  <project name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="e2bb88d854f9c5e713c1f5dd9c96ed8251354e1b"/>
+  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="5d2cb685217794293ea2bab18d7e62019c329d06"/>
+  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="b40116cf457b88a2db14b86fda9627fb34d56ae6"/>
+  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="c79b479ab4b129007c6679bb0bdd8e2ec7ecb6ad"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="bootloader/toolchain" remote="codeaurora" revision="LA.BR.1.1.3.c4"/>
+</manifest>

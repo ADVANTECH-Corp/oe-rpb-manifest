@@ -17,7 +17,7 @@ cd <BSP folder>
 
 To get the latest version of Advantech meta layers, you can use BSP specific XML.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 17.06.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b morty -m 17.09.xml
 ```
 
 To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1100.xml.
