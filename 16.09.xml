@@ -25,6 +25,8 @@
       <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
   </project>
   <project remote="github" name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech"/>
+  <project remote="github" name="imyller/meta-nodejs" path="layers/meta-nodejs"/>
+  <project remote="github" name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib"/>
   <project remote="github" name="ADVANTECH-Corp/lk" path="bootloader/lk" revision="release/LA.BR.1.2.7-03810-8x16.0"/>
   <project remote="codeaurora" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="bootloader/toolchain" revision="LA.BR.1.1.3.c4"/>
   <project remote="linaro" name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" revision="master"/>
