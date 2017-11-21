@@ -3,8 +3,7 @@ oe-rpb-manifest
 
 OE RPB Repo manifest repository with Advantech layer
 
-This repository is based on [96boards/oe-rpb-manifest](https://github.com/96boards/oe-rpb-manifest), and add Advantech add-on features.
-For details about original oe-rpb-manifest, you can check the [README](https://github.com/96boards/oe-rpb-manifest/blob/krogoth/README.md) file.
+This repository is based on [ADVANTECH-Corp/oe-rpb-manifest](https://github.com/ADVANTECH-Corp/oe-rpb-manifest/tree/krogoth), and add additional EdgeSense feature.
 
 BSP Source
 ----------
@@ -17,12 +16,12 @@ cd <BSP folder>
 
 To get the latest version of Advantech meta layers, you can use BSP specific XML.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 16.09.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth-EdgeSense -m 16.09.xml
 ```
 
-To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1060.xml.
+To get an official release version, you can assign the corresponding XML, e.g. 410cLBV1121.xml.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 410cLBV1060.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth-EdgeSense -m 410cLBV1121.xml
 ```
 
 Finally, pull down the BSP by running
@@ -52,15 +51,7 @@ By default, we adopt **rpb** DISTRO.
 Images
 ------
 
-[meta-rpb](https://github.com/96boards/meta-rpb) provides the following images. Currently, we adopt **rpb-desktop-image** by default.
-
-- rpb-console-image
-- rpb-desktop-image
-- rpb-minimal-image
-- rpb-qt5-image
-- rpb-weston-image
-
-To build the image, run
+To build the image with EdgeSense, run
 ```
 bitbake rpb-desktop-image
 ```
