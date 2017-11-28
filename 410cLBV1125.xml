@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://bitbucket.org" name="bitbucket"/>
+  <remote fetch="git://codeaurora.org" name="codeaurora"/>
+  <remote fetch="https://github.com" name="github"/>
+  <remote fetch="http://git.linaro.org" name="linaro"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="http://git.shr-project.org" name="shr"/>
+  <remote fetch="http://git.yoctoproject.org" name="yocto"/>
+  
+  <default revision="krogoth" sync-j="4"/>
+  
+  <project name="96boards/meta-96boards" path="layers/meta-96boards" remote="github" revision="5a14d95f47ea190bf78efeb0d952d1ff205ba522" upstream="master"/>
+  <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github" revision="86f76e70f4497d072ffa08fbf18742f79d7cbb7e" upstream="master"/>
+  <project name="ADVANTECH-Corp/lk" path="bootloader/lk" remote="github" revision="c6f4a3dd947b5d2fcbc40cf4be32c7ef403a1286" upstream="release/LA.BR.1.2.7-03810-8x16.0"/>
+  <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github" revision="df7367836ca818dd7d799fb9eed245bbc6e25c33" upstream="krogoth"/>
+  <project name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" remote="github" revision="695b1bac8f3c329754fc6709332f25c877af0efb" upstream="krogoth-adv">
+    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  </project>
+  <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0"/>
+  <project name="dv1/meta-gstreamer1.0" path="layers/meta-gstreamer1.0" remote="github" revision="81d80589bd136860c1c2a00e9490549aff953bd3" upstream="morty"/>
+  <project name="imyller/meta-nodejs" path="layers/meta-nodejs" remote="github" revision="eec531e97a17bfd406f3bf76dee4057dcf5286a4" upstream="krogoth"/>
+  <project name="imyller/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" remote="github" revision="ce37cddd4b3dcff2d60a33a357f3433287f4298d" upstream="krogoth"/>
+  <project name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" remote="linaro" revision="059f3f2768a8bc460fe814e2bb4bc8cc3078c8ba" upstream="master"/>
+  <project name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github" revision="1ec776771f5f09c97917d3839d8140f9a7668c4a"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="e64564bcaa7331f505baa5209fef1f50dfda1469" upstream="1.30"/>
+  <project name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="b3a54ebaa841e414a1cb028bc72be56ccf8abf85"/>
+  <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="85faf6c6824597e7fd9e2d35fc9d8da2e9f90bc7"/>
+  <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="895b25b387cae428c38990f4d2747603ee9dc92d"/>
+  <project name="openembedded/openembedded-core" path="layers/openembedded-core" remote="github" revision="2a9f4823483b6f5decc6d504858f06f66ab9e06c"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="bootloader/toolchain" remote="codeaurora" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="LA.BR.1.1.3.c4"/>
+</manifest>
