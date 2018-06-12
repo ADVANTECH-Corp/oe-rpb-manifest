@@ -21,7 +21,7 @@
   <project name="dv1/meta-gstreamer1.0" path="layers/meta-gstreamer1.0" remote="github" revision="81d80589bd136860c1c2a00e9490549aff953bd3" upstream="morty"/>
   <project name="landing-teams/working/qualcomm/signlk" path="bootloader/signlk" remote="linaro" revision="059f3f2768a8bc460fe814e2bb4bc8cc3078c8ba" upstream="master"/>
   <project name="meta-qt5/meta-qt5" path="layers/meta-qt5" remote="github" revision="1ec776771f5f09c97917d3839d8140f9a7668c4a"/>
-  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="e64564bcaa7331f505baa5209fef1f50dfda1469" upstream="1.30"/>
+  <project name="openembedded/bitbake" path="bitbake" remote="github" revision="d0a4652fec6d3968b65b4a2776948a7b9e19407e" upstream="1.30"/>
   <project name="openembedded/meta-backports" path="layers/meta-backports" remote="linaro" revision="b3a54ebaa841e414a1cb028bc72be56ccf8abf85"/>
   <project name="openembedded/meta-linaro" path="layers/meta-linaro" remote="linaro" revision="85faf6c6824597e7fd9e2d35fc9d8da2e9f90bc7"/>
   <project name="openembedded/meta-openembedded" path="layers/meta-openembedded" remote="github" revision="895b25b387cae428c38990f4d2747603ee9dc92d"/>
