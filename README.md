@@ -22,7 +22,7 @@ repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m
 
 To get an official release version, you can assign the corresponding tag & XML, e.g. 410cLBV1090.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b refs/tags/410cLBV1090 -m 410cLBV1090.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth -m 410cLBV1090.xml
 ```
 
 Finally, pull down the BSP by running
