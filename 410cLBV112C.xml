@@ -16,8 +16,9 @@
   <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github" revision="5d1d607f17925a0ed5b2481436bda21b00f0ab7c" upstream="krogoth"/>
   <project name="ADVANTECH-Corp/meta-nodejs" path="layers/meta-nodejs" remote="github" revision="eec531e97a17bfd406f3bf76dee4057dcf5286a4" upstream="krogoth"/>
   <project name="ADVANTECH-Corp/meta-nodejs-contrib" path="layers/meta-nodejs-contrib" remote="github" revision="2ffdb9a4e2fba1715479bdabb0540412acecba07" upstream="krogoth"/>
-  <project name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" remote="github" revision="695b1bac8f3c329754fc6709332f25c877af0efb" upstream="krogoth-adv">
-    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  <project name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" remote="github" revision="695b1bac8f3c329754fc6709332f25c877af0efb" upstream="krogoth-adv"/>
+  <project name="ADVANTECH-Corp/oe-rpb-manifest" path="manifest-env" remote="github" revision="84e32e0943728b6170bcf7af7b678819891bc51e" upstream="krogoth-EdgeSense" >
+    <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
   <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0"/>
   <project name="dv1/meta-gstreamer1.0" path="layers/meta-gstreamer1.0" remote="github" revision="81d80589bd136860c1c2a00e9490549aff953bd3" upstream="morty"/>

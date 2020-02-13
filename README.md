@@ -19,9 +19,9 @@ To get the latest version of Advantech meta layers, you can use BSP specific XML
 repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth-EdgeSense -m 16.09.xml
 ```
 
-To get an official release version, you can assign the corresponding tag & XML, e.g. 410cLBV112B.
+To get an official release version, you can assign the corresponding tag & XML, e.g. 410cLBV112C.
 ```
-repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b refs/tags/410cLBV112B -m 410cLBV112B.xml
+repo init -u https://github.com/ADVANTECH-Corp/oe-rpb-manifest.git -b krogoth-EdgeSense -m 410cLBV112C.xml
 ```
 
 Finally, pull down the BSP by running
