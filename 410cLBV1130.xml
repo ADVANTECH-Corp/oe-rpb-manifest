@@ -14,8 +14,9 @@
   <project name="96boards/meta-rpb" path="layers/meta-rpb" remote="github" revision="86f76e70f4497d072ffa08fbf18742f79d7cbb7e" upstream="master"/>
   <project name="ADVANTECH-Corp/lk" path="bootloader/lk" remote="github" revision="c6f4a3dd947b5d2fcbc40cf4be32c7ef403a1286" upstream="release/LA.BR.1.2.7-03810-8x16.0"/>
   <project name="ADVANTECH-Corp/meta-advantech" path="layers/meta-advantech" remote="github" revision="3b677d126a6184df0c9d10a5448d3864ccf7ffd3" upstream="krogoth"/>
-  <project name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" remote="github" revision="695b1bac8f3c329754fc6709332f25c877af0efb" upstream="krogoth-adv">
-    <linkfile dest="setup-environment" src="../../.repo/manifests/setup-environment"/>
+  <project name="ADVANTECH-Corp/meta-qcom" path="layers/meta-qcom" remote="github" revision="695b1bac8f3c329754fc6709332f25c877af0efb" upstream="krogoth-adv"/>
+  <project name="ADVANTECH-Corp/oe-rpb-manifest" path="manifest-env" remote="github" revision="885c1d15d4d7eea2557794b92e5b7d0cead46b62" upstream="krogoth" >
+    <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
   <project name="ADVANTECH-Corp/openembedded-core" path="layers/openembedded-core" remote="github" revision="41252fbd4572940c2accec2c6959b2e97add3780" upstream="krogoth-adv"/>
   <project name="OSSystems/meta-browser" path="layers/meta-browser" remote="github" revision="1b4f1e588b1901d8919ea2362b0fcba37c5023e0"/>
